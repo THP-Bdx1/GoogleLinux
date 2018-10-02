@@ -6,7 +6,7 @@ body {
 
 html{
   margin: 0px;
-  width:97%;
+  width:99%;
 }
 
 #header {
@@ -18,7 +18,7 @@ html{
 
 #header ul {
     list-style-type: none;
-    margin: 0px -36px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 6px 0px 10px 10px;
     display: flex;
     justify-content: flex-end;
@@ -123,8 +123,7 @@ html{
 
 #footer ul {
     float: left;
-    margin-right: -6px;
-    padding: 1px 0px 1px 1px;
+    padding: 1px 15px 1px 1px;
     color: #666;
 }
 
@@ -133,10 +132,9 @@ html{
     border-top: solid 1px #e4e4e4;
     bottom: 0;
     padding-bottom: 0;
-    width: 101%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-right: 37px;
 }
 
 #footer ul li {
@@ -149,7 +147,9 @@ html{
     border-top: solid 2px #e4e4e4;
     padding-bottom: 0;
     width: 100%;
-    padding-left: 19px;
     border-bottom: solid 1px #e4e4e4;
-    padding-right: 37px
+}
+
+#lafrancedugeneraldegaulle p{
+  padding-left: 19px;
 }
