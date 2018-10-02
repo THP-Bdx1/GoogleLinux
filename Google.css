@@ -1,23 +1,37 @@
+body {
+  margin: 0px;
+  padding: 0;
+  min-height : 100%;
+}
+
+html{
+  margin: 0px;
+  width:99%;
+}
+
 #header {
     font-family: arial, sans-serif;
     font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #header ul {
     list-style-type: none;
     margin: 0px;
-    padding: 0px;
+    padding: 6px 1px 10px 10px;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    align-items: center;
 }
 
-a {
+#body a {
     text-decoration: none;
     color: black
 }
 
-a:hover {
+#body a:hover {
     text-decoration: underline;
     color: rgb(92, 91, 91);
 }
@@ -40,9 +54,10 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 280px;
 }
 
-input {
+#body input {
     border: none;
     padding: 10px;
     margin: 10px;
@@ -51,8 +66,16 @@ input {
     width: 550px;
     border: 1px solid #eaeaea;
     outline: none;
-    border-radius: 0;
+    border-radius: 2px;
     -webkit-box-shadow: 1px 3px 2px -2px #c1c1c1;
+}
+
+#body input:focus {
+  -webkit-box-shadow: 3px 5px 5px -2px #c1c1c1;
+}
+
+#body input:hover {
+  -webkit-box-shadow: 3px 5px 5px -2px #c1c1c1;
 }
 
 #bouton1,
@@ -68,6 +91,13 @@ input {
     min-width: 145px;
     padding: 8px 0px 8px 0px;
     text-align: center;
+    height: 37px
+}
+
+#bouton1:hover, #bouton2:hover {
+  color: black;
+  border: 1px solid #a0a0a0a0;
+  -webkit-box-shadow: 1px 2px 2px -2px #c1c1c1;
 }
 
 #boutonhead {
@@ -76,7 +106,8 @@ input {
     font: bold 13px arial;
     padding: 6px 0px 6px 0px;
     border-radius: 2px;
-    width: 100px;
+    height : 30px;
+    width: 93px;
     border: none;
 }
 
@@ -104,11 +135,12 @@ input {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-right: 19px;
 }
 
 #footer ul li {
     display: inline;
-    padding-left: 13px;
+    padding-left: 19px;
 }
 
 #lafrancedugeneraldegaulle {
@@ -116,6 +148,6 @@ input {
     border-top: solid 2px #e4e4e4;
     padding-bottom: 0;
     width: 100%;
-    padding-left: 14px;
+    padding-left: 19px;
     border-bottom: solid 1px #e4e4e4;
 }
