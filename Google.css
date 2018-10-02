@@ -1,4 +1,9 @@
-ul {
+#header {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+}
+
+#header ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -7,9 +12,27 @@ ul {
     flex-direction: row;
 }
 
-li {
+a {
+    text-decoration: none;
+    color: black
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(92, 91, 91);
+}
+
+#header ul li {
     padding: 10px;
     display: inline;
+}
+
+#body {
+    flex-grow: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #bloc {
@@ -17,14 +40,23 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 600px;
 }
 
 input {
-    width: 500px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    height: 20px;
+    width: 550px;
+    border: 1px solid #eaeaea;
+    outline: none;
+    border-radius: 0;
+    -webkit-box-shadow: 1px 3px 2px -2px #c1c1c1;
 }
 
-button {
+#bouton1,
+#bouton2 {
     background-color: #f2f2f2;
     color: #757575;
     border: 1px solid #f2f2f2;
@@ -33,7 +65,57 @@ button {
     font-size: 13px;
     font-weight: bold;
     margin: 11px 4px 11px 4px;
-    min-width: 25px;
-    padding: 16px 0px 16px 0px;
+    min-width: 145px;
+    padding: 8px 0px 8px 0px;
     text-align: center;
+}
+
+#boutonhead {
+    background-color: #478bf9;
+    color: white;
+    font: bold 13px arial;
+    padding: 6px 0px 6px 0px;
+    border-radius: 2px;
+    width: 100px;
+    border: none;
+}
+
+#footer {
+    font-family: arial;
+    font-size: small;
+    color: #666;
+}
+
+#footer a {
+    color: #666;
+}
+
+#footer ul {
+    float: left;
+    padding: 1px;
+    color: #666;
+}
+
+#infosfooter {
+    background: #f2f2f2;
+    border-top: solid 1px #e4e4e4;
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer ul li {
+    display: inline;
+    padding-left: 13px;
+}
+
+#lafrancedugeneraldegaulle {
+    background: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+    padding-bottom: 0;
+    width: 100%;
+    padding-left: 14px;
+    border-bottom: solid 1px #e4e4e4;
 }
